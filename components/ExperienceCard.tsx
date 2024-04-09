@@ -1,9 +1,10 @@
 import { motion } from 'framer-motion';
 import React from 'react'
+import dynamic from "next/dynamic";
 
 type Props = {}
 
-export default function ExperienceCard({}:Props){
+const ExperienceCard=({}:Props)=>{
     return( 
     <article className="flex flx-col rounded-lg items-center space-y-7 flex-shrink-0 first-letter
     w-[500px] md:w-[600px] xl:w-[900px] snap-center bg-[#292929] p-10 hover:opacity-100
@@ -46,3 +47,4 @@ export default function ExperienceCard({}:Props){
     </article>
     )
 }
+export default dynamic (() => Promise.resolve(ExperienceCard), {ssr: false})

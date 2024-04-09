@@ -2,10 +2,11 @@ import React from 'react'
 import { SocialIcon } from 'react-social-icons';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import dynamic from "next/dynamic";
 
 type Props = {}
 
-export default function Header({}: Props) {
+const Header=({}: Props) =>{
   return (
   <header className="sticky top-0 flex items-start justify-between max-w-7xl mx-auto
   z-20 xl:items-center">
@@ -79,3 +80,4 @@ export default function Header({}: Props) {
   </header>
   );
 }
+export default dynamic (() => Promise.resolve(Header), {ssr: false})

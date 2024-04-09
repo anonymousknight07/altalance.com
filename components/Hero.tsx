@@ -2,12 +2,13 @@ import Link from 'next/link';
 import React from 'react';
 import { Cursor , useTypewriter } from "react-simple-typewriter";
 import BackgroundCircles from './BackgroundCircles';
+import dynamic from "next/dynamic";
 
 
 
 type Props = {}
 
-export default function Hero({}: Props) {
+const Hero=({}: Props)=> {
   const [text,count]=useTypewriter({
     words:["Welcome,to E-CELL IARE",
    "Helping to build and grow Entrepreneurs",
@@ -54,3 +55,4 @@ export default function Hero({}: Props) {
   </div>
   );
 }
+export default dynamic (() => Promise.resolve(Hero), {ssr: false})

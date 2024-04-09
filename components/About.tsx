@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import dynamic from "next/dynamic";
 type Props = {}
 
-export default function About({}: Props) {
+const About=({}: Props) =>{
   return (
     <motion.div
     initial={{ opacity:0}}
@@ -46,3 +46,4 @@ export default function About({}: Props) {
   );
 }
 
+export default dynamic (() => Promise.resolve(About), {ssr: false})

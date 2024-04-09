@@ -1,6 +1,7 @@
 import React from 'react'
 import {MapPinIcon,EnvelopeIcon} from "@heroicons/react/24/solid";
 import { useForm, SubmitHandler } from "react-hook-form";
+import dynamic from "next/dynamic";
 
 type Inputs = {
   name:string;
@@ -10,7 +11,7 @@ type Inputs = {
 };
 type Props = {}
 
-function ContactMe({}: Props) {
+const ContactMe=({}: Props)=> {
   const { register,handleSubmit} = useForm<Inputs>();
   const onSubmit: SubmitHandler<Inputs> = (formData) => {
     window.location.href=`mailto:akshathpandey07@gmail?subject=${formData.subject}&body=Hi,my name is ${formData.name}.${formData.message} (${formData.email})`;
@@ -24,7 +25,7 @@ return (
 
 
         <div className="flex flex-col space-y-10">
-            <h4 className="text-4xl font-semibold text-center"><span className="decoration-[#F7AB0A]/50 underline">Let's Connect,</span>{" "}
+            <h4 className="text-4xl font-semibold text-center"><span className="decoration-[#F7AB0A]/50 underline">Let &apos;s Connect,</span>{" "}
             and work together.
             </h4>
             <div className="space-y-10">
@@ -65,4 +66,4 @@ return (
   )
 }
 
-export default ContactMe
+export default dynamic (() => Promise.resolve(ContactMe), {ssr: false})

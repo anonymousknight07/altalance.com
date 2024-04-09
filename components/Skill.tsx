@@ -1,5 +1,7 @@
 import React from 'react'
 import {motion} from "framer-motion"
+import dynamic from "next/dynamic";
+
 type Props = {
     directionLeft?:boolean;
 }
