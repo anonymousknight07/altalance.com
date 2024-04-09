@@ -14,7 +14,7 @@ const Projects=({}: Props) =>{
     text-left md:flex-row max-w-full justify-evenly mx-auto
     items-center z-0 ">
       <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
-        Projects
+        Team Members
       </h3>
       <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20  
       scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[##03abfff7]/40">
@@ -39,13 +39,10 @@ const Projects=({}: Props) =>{
                 <span className="underline decoration-[#03abfff7]/50">
                   Case Study {i+1} of {projects.length}:
                   </span>{" "}
-                  Vocal
+                  Member_name
                   </h4>
                   <p className="text-lg text-center md:text-left">
-                    Vocal is a music player. It is created for all platforms and includes
-                    features like skipping the current song , pausing and playing the song.
-                    It also has sections to view the Top Artists, and the popular songs around you.
-                    The app is just a prototype.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quaerat facilis minus eum quasi porro dolores, officia doloremque debitis architecto quae non consequuntur quos dolorum veniam dolore deleniti qui neque!  
                     </p>
               </div>
           

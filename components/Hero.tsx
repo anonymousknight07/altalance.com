@@ -10,9 +10,9 @@ type Props = {}
 
 const Hero=({}: Props)=> {
   const [text,count]=useTypewriter({
-    words:["Welcome,to E-CELL IARE",
-   "Helping to build and grow Entrepreneurs",
-   "<NEW INDIA />",
+    words:["Keep the sample text here",
+   "This is sample text -1",
+   "This is sample text -2",
    
   ],
   loop:true,
@@ -28,7 +28,7 @@ const Hero=({}: Props)=> {
       alt=""/>
       <div className="z-20">
       <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[10px]">
-       Student in Computer Science & Engineering 
+       A Firm where all your needs are catered too
       </h2>
 
       <h1 className="text-5xl lg:text-6xl font-semibold px-10">

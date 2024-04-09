@@ -14,7 +14,7 @@ const Home:NextPage=()=>{
     overflow-y-scroll 
     overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#03abfff7]/80">
       <Head>
-        <title>Akshat's Portfolio</title>
+        <title>placeholder_name</title>
        
       </Head>
 

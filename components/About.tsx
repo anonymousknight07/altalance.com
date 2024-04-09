@@ -34,9 +34,7 @@ const About=({}: Props) =>{
           <h4 className="text-4xl font-semibold">Here is a{" "} 
            <span className="underline decoration-[#03abfff7] ">little</span>{" "}background</h4>
            <p className="text-base">
-           Hello viewers, I am Akshat , pursuing my B.Tech in the field of Computer Science and Engineering. Currently Working as a PR Head for E-Cell (IARE). My hobbies include 
-           Sketching , Playing guitar. I have expertise in C++, Python and am a fresher in the field of web development and Ethical Hacking.I love to explore and learn about new domains and 
-           connect with new people.
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate ratione maxime accusantium nostrum atque explicabo architecto magnam fugiat, cumque perspiciatis dolorem earum deleniti corporis laudantium asperiores quae eaque sequi possimus.
            </p>
 
         </div>
