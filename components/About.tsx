@@ -32,7 +32,7 @@ const About=({}: Props) =>{
 
         <div className="space-y-10 px-0 md:px-10">
           <h4 className="text-4xl font-semibold">Here is a{" "} 
-           <span className="underline decoration-[#ffaf03f7] ">little</span>{" "}background</h4>
+           <span className="underline decoration-[#03abfff7] ">little</span>{" "}background</h4>
            <p className="text-base">
            Hello viewers, I am Akshat , pursuing my B.Tech in the field of Computer Science and Engineering. Currently Working as a PR Head for E-Cell (IARE). My hobbies include 
            Sketching , Playing guitar. I have expertise in C++, Python and am a fresher in the field of web development and Ethical Hacking.I love to explore and learn about new domains and 

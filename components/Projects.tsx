@@ -17,7 +17,7 @@ const Projects=({}: Props) =>{
         Projects
       </h3>
       <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20  
-      scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/40">
+      scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[##03abfff7]/40">
         {projects.map((project,i)=>(
           <div key={i} className="w-screen flex-shrink-0 snap-center flex flex-col 
           space-y-5 items-center justify-center p-20 md:p-44 h-screen"> 
@@ -36,7 +36,7 @@ const Projects=({}: Props) =>{
 
             <div className="space-y-10 px-0 md:px-10 max-w-6xl">
               <h4 className="text-4xl font-semibold text-center">
-                <span className="underline decoration-[#F7AB0A]/50">
+                <span className="underline decoration-[#03abfff7]/50">
                   Case Study {i+1} of {projects.length}:
                   </span>{" "}
                   Vocal
@@ -56,7 +56,7 @@ const Projects=({}: Props) =>{
         </div>
 
        
-      <div className="w-full absolute top-[30%] bg-[#F7AB0A]/10 left-0 h-[500px] 
+      <div className="w-full absolute top-[30%] bg-[#03abfff7]/10 left-0 h-[500px] 
       -skew-y-12" />
 
       

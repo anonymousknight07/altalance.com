@@ -25,19 +25,19 @@ return (
 
 
         <div className="flex flex-col space-y-10">
-            <h4 className="text-4xl font-semibold text-center"><span className="decoration-[#F7AB0A]/50 underline">Let &apos;s Connect,</span>{" "}
+            <h4 className="text-4xl font-semibold text-center"><span className="decoration-[#03abfff7]/50 underline">Let &apos;s Connect,</span>{" "}
             and work together.
             </h4>
             <div className="space-y-10">
               
 
               <div className="flex items-center space-x-5 justify-center">
-                <EnvelopeIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse"/>
+                <EnvelopeIcon className="text-[#03abfff7]  h-7 w-7 animate-pulse"/>
                 <p className="text-2xl">akshathpandey07@gmail.com</p>
               </div>
 
               <div className="flex items-center space-x-5 justify-center">
-                <MapPinIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse"/>
+                <MapPinIcon className="text-[#03abfff7] h-7 w-7 animate-pulse"/>
                 <p className="text-2xl">Hyderabad,Telangana</p>
               </div>
               
@@ -56,7 +56,7 @@ return (
               <textarea  {...register('message') }placeholder="Message" className="contactInput"/>
               <button 
               type="submit"
-              className="bg-[#F7AB0A] py-5 px-10 rounded-md text-black font-bold
+              className="bg-[#03abfff7] py-5 px-10 rounded-md text-black font-bold
               text-lg">
                 Submit
                 </button>
