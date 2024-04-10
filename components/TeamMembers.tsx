@@ -3,7 +3,7 @@ import {motion} from "framer-motion";
 type Props = {} 
 import dynamic from "next/dynamic";
 
-const Projects=({}: Props) =>{
+const TeamMembers=({}: Props) =>{
   const projects=[1,2];
   return (
     <motion.div 
@@ -41,7 +41,7 @@ const Projects=({}: Props) =>{
                   </span>{" "}
                   Member_name
                   </h4>
-                  <p className="text-lg text-center md:text-left">
+                  <p className=" text-lg text-center md:text-left">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quaerat facilis minus eum quasi porro dolores, officia doloremque debitis architecto quae non consequuntur quos dolorum veniam dolore deleniti qui neque!  
                     </p>
               </div>
@@ -62,4 +62,4 @@ const Projects=({}: Props) =>{
   );
 };
 
-export default dynamic (() => Promise.resolve(Projects), {ssr: false})
+export default dynamic (() => Promise.resolve(TeamMembers), {ssr: false})

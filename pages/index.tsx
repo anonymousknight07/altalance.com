@@ -5,7 +5,7 @@ import About from "../components/About";
 import ContactMe from "../components/ContactMe";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
-import Projects from "../components/Projects";
+import TeamMembers from "../components/TeamMembers";
 import Skills from "../components/Skills";
 import Workexperience from "../components/Workexperience";
 const Home:NextPage=()=>{
@@ -41,8 +41,8 @@ const Home:NextPage=()=>{
         <Skills />
       </section>
       
-      <section id='projects' className="snap-start">
-     <Projects/>
+      <section id='teammembers' className="snap-start">
+     <TeamMembers/>
      
       </section>
 
