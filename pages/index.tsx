@@ -1,4 +1,4 @@
-import type { NextPage } from "next";
+import type { GetStaticProps } from "next";
 import Head from "next/head";
 import Link from "next/link";
 import About from "../components/About";
@@ -8,7 +8,13 @@ import Hero from "../components/Hero";
 import TeamMembers from "../components/TeamMembers";
 import Skills from "../components/Skills";
 import Workexperience from "../components/Workexperience";
-const Home:NextPage=()=>{
+import { Skill } from "../typings";
+import { fetchSkills } from "../utils/fetchSkills";
+
+type Props={
+  skills:Skill[];
+}
+const Home=({skills}:Props)=>{ 
   return (
     <div className=" bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory
     overflow-y-scroll 
@@ -23,7 +29,7 @@ const Home:NextPage=()=>{
 
      
       <section id="hero" className="snap-start">
-        <Hero/>
+        <Hero />
 
       </section>
 
@@ -38,7 +44,7 @@ const Home:NextPage=()=>{
       </section>
 
       <section id="skills" className="snap-start">
-        <Skills />
+        <Skills skills={skills} />
       </section>
       
       <section id='teammembers' className="snap-start">
@@ -68,3 +74,17 @@ const Home:NextPage=()=>{
 };
 
 export default Home;
+
+export const getStaticProps :GetStaticProps<Props> = async () => {
+    const skills:Skill[]=await fetchSkills();
+
+    return{
+      props:{
+        skills,
+      },
+
+      revalidate: 10,
+
+
+    };
+};
