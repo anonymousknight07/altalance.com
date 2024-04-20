@@ -27,6 +27,7 @@
     "react-simple-typewriter": "^5.0.1",
     "react-social-icons": "^5.15.0",
     "sanity": "^3.37.2",
+    "social-icons": "^1.0.1",
     "styled-components": "^6.1.8",
     "typescript": "4.9.4"
   },
