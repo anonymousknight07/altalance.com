@@ -7,13 +7,13 @@ import Header from "../components/Header";
 import Hero from "../components/Hero";
 import TeamMembers from "../components/TeamMembers";
 import Skills from "../components/Skills";
-import Workexperience from "../components/Workexperience";
 import { PageInfo, Services, Skill, Social, Team } from "../typings";
 import {fetchPageInfo } from "../utils/fetchPageInfo"
 import { fetchSkills } from "../utils/fetchSkills";
 import { fetchServices } from "../utils/fetchServices";
 import { fetchTeam } from "../utils/fetchTeam";
 import { fetchSocials } from "../utils/fetchSocials";
+import ServicesO from "../components/ServicesO";
 
 type Props={
   pageInfo: PageInfo;
@@ -37,18 +37,18 @@ const Home=({pageInfo,service,skills,team,socials}:Props)=>{
 
      
       <section id="hero" className="snap-start">
-        <Hero />
+        <Hero pageInfo={pageInfo} />
 
       </section>
 
       
       <section id="about" className="snap-center">
-        <About />
+        <About pageInfo={pageInfo}/>
       </section>
 
     
-      <section id="experience" className="snap-center">
-        <Workexperience />
+      <section id="services" className="snap-center">
+        <ServicesO  />
       </section>
 
       <section id="skills" className="snap-start">

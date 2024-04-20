@@ -3,12 +3,16 @@ import React from 'react';
 import { Cursor , useTypewriter } from "react-simple-typewriter";
 import BackgroundCircles from './BackgroundCircles';
 import dynamic from "next/dynamic";
+import { PageInfo } from '../typings';
+import { urlFor } from '../sanity';
 
-type Props = {}
+type Props = {
+  pageInfo:PageInfo;
+}
 
-const Hero=({}: Props)=> {
+const Hero=({pageInfo}: Props)=> {
   const [text,count]=useTypewriter({
-    words:["Altalance ",
+    words:[pageInfo?.name,
    "Find the right freelancer for your project needs",  
   ],
   loop:true,
@@ -20,13 +24,13 @@ const Hero=({}: Props)=> {
       <div className="relative rounded-full overflow-hidden border-white border-2">
         <img 
           className="h-32 w-32 mx-auto object-cover"
-          src="/images/logo5.png"
-          alt=""
+          src={urlFor(pageInfo?.heroImage).url()}
+          alt="image"
         />
       </div>
       <div className="z-20">
         <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[10px]">
-          Altalance: Freelance Aggregator
+          {pageInfo.role}
         </h2>
         <h1 className="text-5xl lg:text-6xl font-semibold px-10">
           <span className="mr-3">{text}</span>
@@ -36,8 +40,8 @@ const Hero=({}: Props)=> {
           <Link href="#about">
              <button className="heroButton">About</button>
           </Link>
-          <Link href="#experience">
-             <button className="heroButton">Experience</button>
+          <Link href="#services">
+             <button className="heroButton">Services Offered</button>
           </Link>
           <Link href="#skills">
              <button className="heroButton">Skills</button>

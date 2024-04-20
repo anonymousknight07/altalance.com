@@ -4,10 +4,7 @@ import {sanityClient} from"../../sanity";
 import {  Services} from "../../typings";
 
 const query = groq`
-    *[_type == "servicesoffered"]{
-      technologies[]->
-
-    }
+    *[_type == "services"]
 `;
 
 type Data = {
