@@ -55,8 +55,8 @@ const Home=({pageInfo,service,skills,team,socials}:Props)=>{
         <Skills skills={skills} />
       </section>
       
-      <section id='teammembers' className="snap-start">
-     <TeamMembers/>
+      <section id='team' className="snap-start">
+     <TeamMembers team={team}/>
      
       </section>
 

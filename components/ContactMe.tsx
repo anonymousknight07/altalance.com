@@ -14,7 +14,7 @@ type Props = {}
 const ContactMe=({}: Props)=> {
   const { register,handleSubmit} = useForm<Inputs>();
   const onSubmit: SubmitHandler<Inputs> = (formData) => {
-    window.location.href=`mailto:akshathpandey07@gmail?subject=${formData.subject}&body=Hi,my name is ${formData.name}.${formData.message} (${formData.email})`;
+    window.location.href=`mailto:contact@altalance.com?subject=${formData.subject}&body=Hi,my name is ${formData.name}.${formData.message} (${formData.email})`;
   };
 return (
     <div className="h-screen flex relative flex-col text-center md:text-left md:flex-row
@@ -33,7 +33,7 @@ return (
 
               <div className="flex items-center space-x-5 justify-center">
                 <EnvelopeIcon className="text-[#03abfff7]  h-7 w-7 animate-pulse"/>
-                <p className="text-2xl">akshathpandey07@gmail.com</p>
+                <p className="text-2xl">contact@altalance.com</p>
               </div>
 
               <div className="flex items-center space-x-5 justify-center">
