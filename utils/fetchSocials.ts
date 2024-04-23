@@ -1,14 +1,10 @@
-import axios from 'axios';
 import { Social } from "../typings";
 
-export const fetchSocials = async () => {
-    try {
-        const res = await axios.get(`${process.env.NEXT_PUBLIC_URL}/api/getSocials`);
-        const socials: Social[] = res.data.socials;
-        return socials;
-    } catch (error) {
-        // Handle error, perhaps by logging or returning a default value
-        console.error('Error fetching socials:', error);
-        return [];
-    }
+export const fetchSocials =async()=> {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/getSocials`);
+
+    const data= await res.json()
+    const socials:Social[]=data.socials;
+    
+    return socials;
 }
