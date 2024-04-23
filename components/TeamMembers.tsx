@@ -48,14 +48,14 @@ const TeamMembers = ({ team }: Props) => {
                 </p>
                
               </div>
-              <div className='flex items-center space-x-2 justify-center' >
+              <div className='flex items-center space-x-2 justify-center'>
                 <p>Reach out on :</p>
-              {teamMember.linktosocial && ( 
-                  <a href={teamMember.linktosocial} target="_blank" rel="noopener noreferrer">
-                    <FaLinkedin size={24} /> 
+                {teamMember.linktosocial && (
+                  <a href={teamMember.linktosocial.toString()} target="_blank" rel="noopener noreferrer">
+                    <FaLinkedin size={24} />
                   </a>
                 )}
-                </div>
+              </div>
             </div>
           </div>
         ))}
