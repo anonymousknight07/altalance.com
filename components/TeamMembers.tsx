@@ -2,9 +2,8 @@ import React from 'react';
 import { motion } from "framer-motion";
 import { FaLinkedin } from 'react-icons/fa';
 
-type Props = {}
 
-const TeamMembers = ({}: Props) => {
+const TeamMembers = () => {
   const teamMembers = [
     {
       name: "Akshat Pandey",

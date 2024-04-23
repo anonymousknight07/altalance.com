@@ -1,13 +1,12 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from 'react'
 import { motion } from 'framer-motion';
 import dynamic from "next/dynamic";
-import { PageInfo } from '../typings';
-import { urlFor } from '../sanity';
-type Props = {
-  pageInfo :PageInfo;
-}
 
-const About=({pageInfo}: Props) =>{
+import { urlFor } from '../sanity';
+
+
+const About=() =>{
   return (
     <motion.div
     initial={{ opacity:0}}
@@ -29,7 +28,7 @@ const About=({pageInfo}: Props) =>{
         }}
         whileInView={{ opacity:1, x: 0}}
         // viewport={{ once:true}}
-        src={urlFor(pageInfo?.profilePic).url()}
+        src="https://cdn.sanity.io/images/rh8hx4sn/production/f2570bec60241acd57e3ffeb241a08a68765fa27-561x642.jpg"
         className="-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover
         md:rounded-lg md:w-64 md:h-95 xl:w-[400px] xl:h-[500px] "
         />
@@ -38,7 +37,7 @@ const About=({pageInfo}: Props) =>{
           <h4 className="text-4xl font-semibold">Here is a{" "} 
            <span className="underline decoration-[#03abfff7] ">little</span>{" "}background</h4>
            <p className="text-base">
-           {pageInfo?.backgroundInformation}
+           Welcome to Altalance, your premier destination for freelance services with a difference. At Altalance, we're not just connecting you with individual freelancers; we're revolutionizing the freelance experience altogether. Our mission is simple yet transformative: to bridge the gap between clients and freelancers by establishing a "safe-harbour" that ensures accountability, reliability, and unparalleled quality in every project.   Unlike traditional freelance platforms where clients often navigate through a sea of individual freelancers, at  Altalance, you interact directly with our company. This unique approach ensures that every project is managed with meticulous attention to detail and accountability from start to fin.
            </p>
 
         </div>
