@@ -9,18 +9,16 @@ import Hero from "../components/Hero";
 import TeamMembers from "../components/TeamMembers";
 import Skills from "../components/Skills";
 import {  Skill, Social, } from "../typings";
-import { fetchSkills } from "../utils/fetchSkills";
 import { fetchSocials } from "../utils/fetchSocials";
 import ServicesO from "../components/ServicesO";
 
 type Props={
   
-  
-  skills:Skill[];
+
   
   socials: Social[];
 }
-const Home=({skills,socials}:Props)=>{ 
+const Home=({socials}:Props)=>{ 
   return (
     <div className=" bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory
     overflow-y-scroll 
@@ -50,7 +48,7 @@ const Home=({skills,socials}:Props)=>{
       </section>
 
       <section id="skills" className="snap-start">
-        <Skills skills={skills} />
+        <Skills  />
       </section>
       
       <section id='team' className="snap-start">
@@ -83,12 +81,11 @@ export default Home;
 
 export const getStaticProps :GetStaticProps<Props> = async () => {
   
-  const skills:Skill[]=await fetchSkills();
   const socials: Social[]=await fetchSocials();
 
     return{
       props:{
-        skills,
+        
         socials,
       },
 
