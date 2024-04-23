@@ -17,12 +17,12 @@ import ServicesO from "../components/ServicesO";
 
 type Props={
   pageInfo: PageInfo;
-  service: Services[];
+  
   skills:Skill[];
   team: Team[];
   socials: Social[];
 }
-const Home=({pageInfo,service,skills,team,socials}:Props)=>{ 
+const Home=({pageInfo,skills,team,socials}:Props)=>{ 
   return (
     <div className=" bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory
     overflow-y-scroll 
@@ -93,7 +93,6 @@ export const getStaticProps :GetStaticProps<Props> = async () => {
     return{
       props:{
         pageInfo,
-        service,
         skills,
         team,
         socials,
