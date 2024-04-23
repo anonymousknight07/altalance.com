@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import type { GetStaticProps } from "next";
 import Head from "next/head";
 import Link from "next/link";
@@ -7,7 +8,7 @@ import Header from "../components/Header";
 import Hero from "../components/Hero";
 import TeamMembers from "../components/TeamMembers";
 import Skills from "../components/Skills";
-import { PageInfo, Services, Skill, Social, Team } from "../typings";
+import { PageInfo, Skill, Social, Team } from "../typings";
 import {fetchPageInfo } from "../utils/fetchPageInfo"
 import { fetchSkills } from "../utils/fetchSkills";
 import { fetchServices } from "../utils/fetchServices";
@@ -85,7 +86,6 @@ export default Home;
 
 export const getStaticProps :GetStaticProps<Props> = async () => {
   const pageInfo: PageInfo=await fetchPageInfo();
-  const service: Services[]=await fetchServices();
   const skills:Skill[]=await fetchSkills();
   const team:Team[]=await fetchTeam();
   const socials: Social[]=await fetchSocials();
