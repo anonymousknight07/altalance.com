@@ -23,39 +23,40 @@ const TeamMembers = ({ team }: Props) => {
       <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20  scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#03abfff7]/40">
         {team.map((teamMember, i) => (
           <div key={i} className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen">
-            <motion.img
-              initial={{
-                y: -300,
-                opacity: 0
-              }}
-              transition={{ duration: 1.2 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              height={250}
-              width={250}
-              src={urlFor(teamMember?.image).url()}
-              alt=""
-            />
+            {teamMember?.image && ( // Check if image exists
+              <motion.img
+                initial={{
+                  y: -300,
+                  opacity: 0
+                }}
+                transition={{ duration: 1.2 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                height={250}
+                width={250}
+                src={urlFor(teamMember.image).url()}
+                alt=""
+              />
+            )}
             <div className="space-y-10 px-0 md:px-10 max-w-6xl text-center"> {/* Center align text */}
               <h4 className="text-4xl text-cyan-700 font-semibold">
-                {teamMember.membername} 
-              
+                {teamMember?.membername} 
               </h4>
-              
-              <div>
-                <p className="text-lg">
-                  {teamMember.description}
-                </p>
-               
-              </div>
-              <div className='flex items-center space-x-2 justify-center'>
-                <p>Reach out on :</p>
-                {teamMember.linktosocial && (
+              {teamMember?.description && ( // Check if description exists
+                <div>
+                  <p className="text-lg">
+                    {teamMember.description}
+                  </p>
+                </div>
+              )}
+              {teamMember?.linktosocial && ( // Check if link to social exists
+                <div className='flex items-center space-x-2 justify-center'>
+                  <p>Reach out on :</p>
                   <a href={teamMember.linktosocial.toString()} target="_blank" rel="noopener noreferrer">
                     <FaLinkedin size={24} />
                   </a>
-                )}
-              </div>
+                </div>
+              )}
             </div>
           </div>
         ))}
