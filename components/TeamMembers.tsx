@@ -39,6 +39,7 @@ const TeamMembers = ({ team }: Props) => {
             <div className="space-y-10 px-0 md:px-10 max-w-6xl text-center"> {/* Center align text */}
               <h4 className="text-4xl text-cyan-700 font-semibold">
                 {teamMember.membername} 
+              
               </h4>
               
               <div>

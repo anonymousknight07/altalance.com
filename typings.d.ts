@@ -39,6 +39,8 @@ export interface Services extends SanityBody {
     points:string[];
 }
 export interface Team extends SanityBody {
+    membername: string;
+    linktosocial: JSX.Element;
     title:string;
     _type:"team";
     image:Image;
