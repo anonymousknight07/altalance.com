@@ -8,17 +8,11 @@ import Header from "../components/Header";
 import Hero from "../components/Hero";
 import TeamMembers from "../components/TeamMembers";
 import Skills from "../components/Skills";
-import {  Skill, Social, } from "../typings";
-import { fetchSocials } from "../utils/fetchSocials";
+
 import ServicesO from "../components/ServicesO";
 
-type Props={
-  
 
-  
-  socials: Social[];
-}
-const Home=({socials}:Props)=>{ 
+const Home=( )=>{ 
   return (
     <div className=" bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory
     overflow-y-scroll 
@@ -29,7 +23,7 @@ const Home=({socials}:Props)=>{
       </Head>
 
       
-      <Header socials={socials}/>
+      <Header/>
 
      
       <section id="hero" className="snap-start">
@@ -79,18 +73,3 @@ const Home=({socials}:Props)=>{
 
 export default Home;
 
-export const getStaticProps :GetStaticProps<Props> = async () => {
-  
-  const socials: Social[]=await fetchSocials();
-
-    return{
-      props:{
-        
-        socials,
-      },
-
-      revalidate: 10,
-
-
-    };
-};

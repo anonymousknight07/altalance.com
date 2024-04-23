@@ -3,13 +3,12 @@ import { SocialIcon } from 'react-social-icons';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import dynamic from "next/dynamic";
-import { Social } from '../typings';
+import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 
-type Props = {
-  socials?: Social[];
-}
 
-const Header = ({ socials }: Props) => {
+
+
+const Header = () => {
   return (
     <header className="sticky top-0 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center">
       <motion.div
@@ -27,15 +26,21 @@ const Header = ({ socials }: Props) => {
           duration: 1.5
         }}
         className="flex flex-row items-center">
-        {/* Conditional rendering for social icons */}
-        {socials && socials.length > 0 && socials.map((social) => (
-          <SocialIcon
-            key={social._id}
-            url={social.url}
-            fgColor='gray'
-            bgColor='transparent'
-          />
-        ))}
+        
+          {/* LinkedIn icon */}
+          <div className="mr-4"> {/* Add margin-right for gap */}
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+              <FaLinkedinIn size={28} color="gray" /> {/* Increase size */}
+            </a>
+          </div>
+
+          {/* GitHub icon */}
+          <div> {/* Wrap in div for styling */}
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+              <FaGithub size={28} color="gray" /> {/* Increase size */}
+            </a>
+          </div>
+        
       </motion.div>
       <Link href="#contact">
         <motion.div
