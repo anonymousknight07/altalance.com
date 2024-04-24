@@ -33,7 +33,7 @@ const Header = () => {
 
           {/* GitHub icon */}
           <div>
-            <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/Altalance/" target="_blank" rel="noopener noreferrer">
               <FaGithub size={28} color="gray" />
             </a>
           </div>
