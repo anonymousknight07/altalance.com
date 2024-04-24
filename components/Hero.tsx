@@ -7,7 +7,7 @@ import dynamic from "next/dynamic";
 
 
 const Hero=()=> {
-  const [text,count]=useTypewriter({
+  const [text]=useTypewriter({
     words:["Altalance ",
    "Find the right freelancer for your project needs",  
   ],

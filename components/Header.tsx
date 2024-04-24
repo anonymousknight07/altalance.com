@@ -5,12 +5,9 @@ import Link from 'next/link';
 import dynamic from "next/dynamic";
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 
-
-
-
 const Header = () => {
   return (
-    <header className="sticky top-0 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center">
+    <header className="sticky top-0 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center px-6 md:px-0"> {/* Added padding for smaller screens */}
       <motion.div
         initial={{
           x: -500,
@@ -28,16 +25,16 @@ const Header = () => {
         className="flex flex-row items-center">
         
           {/* LinkedIn icon */}
-          <div className="mr-4"> {/* Add margin-right for gap */}
+          <div className="mr-4">
             <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
-              <FaLinkedinIn size={28} color="gray" /> {/* Increase size */}
+              <FaLinkedinIn size={28} color="gray" />
             </a>
           </div>
 
           {/* GitHub icon */}
-          <div> {/* Wrap in div for styling */}
+          <div>
             <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
-              <FaGithub size={28} color="gray" /> {/* Increase size */}
+              <FaGithub size={28} color="gray" />
             </a>
           </div>
         

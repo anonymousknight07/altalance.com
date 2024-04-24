@@ -2,7 +2,6 @@ import React from 'react';
 import { motion } from "framer-motion";
 import { FaLinkedin } from 'react-icons/fa';
 
-
 const TeamMembers = () => {
   const teamMembers = [
     {
@@ -41,9 +40,28 @@ const TeamMembers = () => {
       <h3 className="absolute top-2 uppercase tracking-[20px] text-gray-500 text-2xl">
         Team Members
       </h3>
-      <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20  scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#03abfff7]/40">
+      <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20  scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#03abfff7]/40 hide-scrollbar">
         {teamMembers.map((member, index) => (
-          <div key={index} className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen"> 
+          <div key={index} className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen relative"> 
+            {/* Arrow indicating other cards */}
+            {index !== teamMembers.length - 1 && ( // Arrow should not be shown for the last card
+              <div className="absolute right-5 top-1/2 transform -translate-y-1/2 animate-bounce text-white">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-8 w-8"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M14 5l7 7m0 0l-7 7m7-7H3"
+                  />
+                </svg>
+              </div>
+            )}
             <motion.img 
               initial={{
                 y: -300,
