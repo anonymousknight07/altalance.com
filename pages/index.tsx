@@ -53,16 +53,16 @@ const Home=( )=>{
        <section id='contact' className="snap-start">
         <ContactMe />
       </section>
+
       <Link href="#hero">
-      <footer className="sticky bottom-5 w-full cursor-pointer">
-        <div className="flex items-center justify-center">
-          <img 
-          className="h-10 w-10 rounded-full filter grayscale hover:grayscale-0
-          cursor-pointer"
-          src="https://w7.pngwing.com/pngs/567/773/png-transparent-computer-icons-home-black-home-icon-miscellaneous-angle-black-thumbnail.png" alt=""
-          />
-          </div>
-      </footer>
+      <footer className="sticky bottom-5 w-full cursor-pointer flex justify-center">
+  <img
+    className="h-8 w-8 rounded-full border-2 border-white filter grayscale hover:grayscale-0 cursor-pointer"
+    src="https://cdn.sanity.io/images/rh8hx4sn/production/cd1b3ecd79cef58af7832b6a3d34491c3bf3f54b-512x487.png"
+    alt=""
+  />
+</footer>
+
       
       </Link> 
 
