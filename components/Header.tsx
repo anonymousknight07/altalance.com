@@ -20,16 +20,16 @@ const Header = () => {
         transition={{
           duration: 1.5
         }}
-        className="flex flex-row items-center space-x-4"> {/* Used space-x-4 for spacing between icons */}
+        className="flex flex-row items-center space-x-3"> {/* Used space-x-4 for spacing between icons */}
         
         {/* LinkedIn icon */}
         <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" className="p-1 rounded-full hover:bg-gray-200">
-          <FaLinkedinIn size={28} color="gray" />
+          <FaLinkedinIn size={20} color="gray" />
         </a>
 
         {/* GitHub icon */}
         <a href="https://github.com/" target="_blank" rel="noopener noreferrer" className="p-1 rounded-full hover:bg-gray-200">
-          <FaGithub size={28} color="gray" />
+          <FaGithub size={20} color="gray" />
         </a>
 
       </motion.div>
@@ -51,7 +51,7 @@ const Header = () => {
             duration: 1.5
           }}
           className="flex items-center p-1 rounded-full hover:bg-gray-200 cursor-pointer">
-          <FaEnvelope size={28} color="gray" className="mr-2" /> {/* Added margin to the right of the icon */}
+          <FaEnvelope size={20} color="gray" className="mr-2" /> {/* Added margin to the right of the icon */}
           <p className="uppercase hidden md:inline-flex text-sm text-gray-400">Get in Touch</p>
         </motion.div>
       </Link>
