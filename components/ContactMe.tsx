@@ -38,7 +38,7 @@ const ContactMe = ({}: Props) => {
       </h3>
       <div className="flex flex-col space-y-10">
         <h4 className="text-4xl font-semibold text-center">
-          <span className="decoration-[#03abfff7]/50 underline">Let&apos;s Connect,</span>{" "}
+          <span className="decoration-[#03abfff7]/50 underline">Let's Connect,</span>{" "}
           and work together.
         </h4>
         <div className="space-y-10">

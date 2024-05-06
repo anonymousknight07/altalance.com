@@ -11,12 +11,6 @@ const TeamMembers = () => {
       linkedIn: "https://www.linkedin.com/in/akshat-pandey-5a2107228/"
     },
     {
-      name: "Gaurang Ratnaparkhi ",
-      imageSrc: "https://cdn.sanity.io/images/rh8hx4sn/production/6b8d1faf57b728bec75ea4e77ebe63b113982000-3200x3200.jpg",
-      description: "Gaurang is a software engineer and a fullstack developer. He can help you turn your ideas into production ready full stack applications. Gaurang navigates the complexities of coding with ease. His expertise spans across front-end and back-end technologies, ensuring seamless integration and robust functionality. Whether it's crafting intuitive user interfaces or optimizing database performance, Gaurang's dedication to excellence drives him to deliver solutions that exceed expectations.",
-      linkedIn: "https://www.linkedin.com/in/gaurangratnaparkhi/"
-    },
-    {
       name: "Manish Sagar Ramarapu",
       imageSrc: "https://cdn.sanity.io/images/rh8hx4sn/production/c4f71e0a6c6e22033fdb64e886780daf19cf92b5-300x300.jpg",
       description: " Meet Manish, the digital marketing whiz. With a knack for online trends and a strategic approach, he crafts captivating campaigns that drive results. From SEO to social media, Manish's expertise elevates brands in the digital sphere, making him a formidable force in the industry.",
@@ -28,7 +22,12 @@ const TeamMembers = () => {
       description: "Yuvraj, a Mechanical Engineer by trade, embodies the spirit of entrepreneurship with a flair for design. Beyond his technical prowess, he thrives on creative challenges, excelling in tasks that demand innovation and attention to detail. With Yuvraj on your team, expect not only precision in engineering but also a touch of artistic ingenuity. ",
       linkedIn: "https://www.linkedin.com/in/kyuvraj/"
     },
-    
+    {
+      name: "Gaurang Ratnaparkhi ",
+      imageSrc: "https://cdn.sanity.io/images/rh8hx4sn/production/6b8d1faf57b728bec75ea4e77ebe63b113982000-3200x3200.jpg",
+      description: "Gaurang is a software engineer and a fullstack developer. He can help you turn your ideas into production ready full stack applications. Gaurang navigates the complexities of coding with ease. His expertise spans across front-end and back-end technologies, ensuring seamless integration and robust functionality. Whether it's crafting intuitive user interfaces or optimizing database performance, Gaurang's dedication to excellence drives him to deliver solutions that exceed expectations.",
+      linkedIn: "https://www.linkedin.com/in/gaurangratnaparkhi/"
+    },
   ];
 
   return (

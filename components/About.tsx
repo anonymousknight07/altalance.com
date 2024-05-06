@@ -7,6 +7,7 @@ import dynamic from "next/dynamic";
 
 const About=() =>{
   return (
+    
     <motion.div
     initial={{ opacity:0}}
     whileInView={{ opacity: 1}}
@@ -29,7 +30,7 @@ const About=() =>{
         // viewport={{ once:true}}
         src="https://cdn.sanity.io/images/rh8hx4sn/production/f2570bec60241acd57e3ffeb241a08a68765fa27-561x642.jpg"
         className="-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover
-        md:rounded-lg md:w-64 md:h-95 xl:w-[400px] xl:h-[500px] "
+        md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[600px] "
         />
  
         <div className="space-y-10 px-0 md:px-10">
@@ -43,6 +44,7 @@ const About=() =>{
 
 
       </motion.div>
+     
   );
 }
 
