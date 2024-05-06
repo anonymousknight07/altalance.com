@@ -10,6 +10,7 @@ import TeamMembers from "../components/TeamMembers";
 import Skills from "../components/Skills";
 
 import ServicesO from "../components/ServicesO";
+import { FaHouseUser } from "react-icons/fa";
 
 
 const Home=( )=>{ 
@@ -56,11 +57,8 @@ const Home=( )=>{
 
       <Link href="#hero">
       <footer className="sticky bottom-5 w-full cursor-pointer flex justify-center">
-  <img
-    className="h-8 w-8 rounded-full border-2 border-white filter grayscale hover:grayscale-0 cursor-pointer"
-    src="https://cdn.sanity.io/images/rh8hx4sn/production/cd1b3ecd79cef58af7832b6a3d34491c3bf3f54b-512x487.png"
-    alt=""
-  />
+      <FaHouseUser size={23}/>
+  
 </footer>
 
       
