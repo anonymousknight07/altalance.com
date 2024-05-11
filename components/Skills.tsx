@@ -1,6 +1,5 @@
 import React from 'react'
 import {motion} from "framer-motion";
-import Skill from './Skill1';
 import dynamic from "next/dynamic";
 import Skill1 from './Skill1';
 import Skill2 from './Skill2';
@@ -42,7 +41,7 @@ function Skills({}: Props) {
     <h3 className="absolute top-36 uppercase tracking-[3px] text-gray-500 text-sm">
       Hover over a skill for currency profieciency
       </h3>
-    <div className="grid grid-cols-6 gap-5">
+    <div className="grid grid-cols-4 gap-2">
       <Skill1/>
       <Skill2/>
       <Skill3/>
