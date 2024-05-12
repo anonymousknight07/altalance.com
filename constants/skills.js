@@ -7,7 +7,7 @@ export const skills = [
         type: "Frontend",
     },
     {
-        imageUrl: "https://cdn.sanity.io/images/rh8hx4sn/production/04fb7938cea666f0bd4c4bc0c6236a99473a6435-240x240.svg",
+        imageUrl: "https://cdn.sanity.io/images/rh8hx4sn/production/2932c6ebea958e6ebbb8dfe376b61a34faff8b40-800x800.svg",
         name: "Express",
         type: "Backend",
     },
