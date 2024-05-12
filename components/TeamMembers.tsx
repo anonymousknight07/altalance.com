@@ -23,7 +23,8 @@ const TeamMembers = () => {
     };
   }, []); // Empty dependency array to run only once on mount
 
-  const isLargeScreen = windowWidth >= 768;
+  // Determine if it's a large or extra-large screen (>= 1024px)
+  const isLargeScreen = windowWidth >= 1024;
 
   const teamMembers = [
     {
@@ -33,10 +34,10 @@ const TeamMembers = () => {
       linkedIn: "https://www.linkedin.com/in/akshat-pandey-5a2107228/"
     },
     {
-      name: "Manish Sagar Ramarapu",
-      imageSrc: "https://cdn.sanity.io/images/rh8hx4sn/production/c4f71e0a6c6e22033fdb64e886780daf19cf92b5-300x300.jpg",
-      description: "Meet Manish, the digital marketing whiz. With a knack for online trends and a strategic approach, he crafts captivating campaigns that drive results. From SEO to social media, Manish's expertise elevates brands in the digital sphere, making him a formidable force in the industry.",
-      linkedIn: "https://www.linkedin.com/in/manishramarapu/"
+      name: "Gaurang Ratnaparkhi",
+      imageSrc: "https://cdn.sanity.io/images/rh8hx4sn/production/6b8d1faf57b728bec75ea4e77ebe63b113982000-3200x3200.jpg",
+      description: "Gaurang is a software engineer and a fullstack developer. He can help you turn your ideas into production ready full stack applications. Gaurang navigates the complexities of coding with ease. His expertise spans across front-end and back-end technologies, ensuring seamless integration and robust functionality. Whether it's crafting intuitive user interfaces or optimizing database performance, Gaurang's dedication to excellence drives him to deliver solutions that exceed expectations.",
+      linkedIn: "https://www.linkedin.com/in/gaurangratnaparkhi/"
     },
     {
       name: "Yuvraj K",
@@ -45,11 +46,11 @@ const TeamMembers = () => {
       linkedIn: "https://www.linkedin.com/in/kyuvraj/"
     },
     {
-      name: "Gaurang Ratnaparkhi",
-      imageSrc: "https://cdn.sanity.io/images/rh8hx4sn/production/6b8d1faf57b728bec75ea4e77ebe63b113982000-3200x3200.jpg",
-      description: "Gaurang is a software engineer and a fullstack developer. He can help you turn your ideas into production ready full stack applications. Gaurang navigates the complexities of coding with ease. His expertise spans across front-end and back-end technologies, ensuring seamless integration and robust functionality. Whether it's crafting intuitive user interfaces or optimizing database performance, Gaurang's dedication to excellence drives him to deliver solutions that exceed expectations.",
-      linkedIn: "https://www.linkedin.com/in/gaurangratnaparkhi/"
-    },
+      name: "Manish Sagar Ramarapu",
+      imageSrc: "https://cdn.sanity.io/images/rh8hx4sn/production/c4f71e0a6c6e22033fdb64e886780daf19cf92b5-300x300.jpg",
+      description: "Meet Manish, the digital marketing whiz. With a knack for online trends and a strategic approach, he crafts captivating campaigns that drive results. From SEO to social media, Manish's expertise elevates brands in the digital sphere, making him a formidable force in the industry.",
+      linkedIn: "https://www.linkedin.com/in/manishramarapu/"
+    }
   ];
 
   return (
@@ -100,7 +101,9 @@ const TeamMembers = () => {
                 <h4 className="text-4xl font-semibold text-center">
                   <span className="underline decoration-[#03abfff7]/50">{member.name}</span>
                 </h4>
-                <p className="text-lg text-center md:text-left">{member.description}</p>
+                {isLargeScreen && (
+                  <p className="text-lg text-center md:text-left">{member.description}</p>
+                )}
                 <div className="flex items-center space-x-2 justify-center">
                   <p>Reach out on :</p>
                   <a href={member.linkedIn} target="_blank" rel="noopener noreferrer">
@@ -114,12 +117,9 @@ const TeamMembers = () => {
                   <span className="underline decoration-[#03abfff7]/50">{member.name}</span>
                 </h4>
                 <div>
-                <p>Reach out on :</p>
-                  <a href={member.linkedIn}
-        target="_blank"
-        rel="noopener noreferrer"
-        style={{ display: 'inline-block', verticalAlign: 'middle', marginRight: '10px' }} >
-                    <FaLinkedin size={24}  />
+                  <p>Reach out on :</p>
+                  <a href={member.linkedIn} target="_blank" rel="noopener noreferrer" style={{ display: 'inline-block', verticalAlign: 'middle', marginRight: '10px' }}>
+                    <FaLinkedin size={24} />
                   </a>
                 </div>
               </div>
