@@ -6,7 +6,7 @@ const About = () => {
   // Define different text content for smaller and larger screens
   const smallScreenText = (
     <div className="space-y-4">
-      <h4 className="text-2xl font-semibold">Learn more about Altalance</h4>
+      <h4 className="text-2xl font-semibold"> Here is a <span className="underline text-blue-500">little</span> background</h4>
       <p className="text-base">
         Altalance is your go-to platform for freelance services. We aim to transform the freelance
         experience by bridging the gap between clients and freelancers.

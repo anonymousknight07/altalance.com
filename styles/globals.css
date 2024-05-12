@@ -12,4 +12,10 @@
         text-gray-500 placeholder-gray-500 transition-all focus:border-[#03abfff7]/40
         focus:text-[#03abfff7]/40 hover:border-[#03abfff7]/40
     }
+    
+}
+@layer utilities{
+    .btn {
+        @apply text-white bg-gradient-to-r from-[#00c6ff] to-[#0072ff] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center;
+      }
 }

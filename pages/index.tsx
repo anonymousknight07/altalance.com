@@ -11,6 +11,7 @@ import Skills from "../components/Skills";
 
 import ServicesO from "../components/ServicesO";
 import { FaHouseUser } from "react-icons/fa";
+import Skillextra from "../components/Skillextra";
 
 
 const Home=( )=>{ 
@@ -43,7 +44,7 @@ const Home=( )=>{
       </section>
 
       <section id="skills" className="snap-start">
-        <Skills  />
+        <Skillextra />
       </section>
       
       <section id='team' className="snap-start">

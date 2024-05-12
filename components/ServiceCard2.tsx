@@ -16,10 +16,10 @@ const ServiceCard = ({}: Props) => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="w-32 h-32 rounded-full xl:w-[150px] xl:h-[150px] object-cover object-center"
-          src="https://cdn.sanity.io/images/rh8hx4sn/production/5d7ce8d5c8caf1152b9f10aeb81579b161d0e315-1200x800.jpg"
+          src="https://cdn.sanity.io/images/rh8hx4sn/production/46a9d660357ee01b9af353286723fbc799268577-5002x2629.jpg"
           alt=""
         />
-        <h4 className="text-4xl font-bold mt-4 text-center">2. Web Development</h4> {/* Center aligned title */}
+        <h4 className="text-4xl font-bold mt-4 text-center sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">2. Web development</h4> {/* Center aligned title */}
       </div>
       {/* Conditionally render the description based on screen size */}
       <div className="px-0 md:px-10">

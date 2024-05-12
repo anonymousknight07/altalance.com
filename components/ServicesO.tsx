@@ -24,8 +24,8 @@ function ServicesO({}: Props) {
         Service Offered
       </h3>
 
-      <div className="w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#03abfff7]/40">
-        <ServiceCard />
+      <div className="w-full  flex space-x-4 overflow-x-scroll p-10 snap-x snap-mandatory scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#03abfff7]/40 ">
+        <ServiceCard  />
         <ServiceCard2 />
         <ServiceCard3 />
         <ServiceCard4 />
