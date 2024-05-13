@@ -61,7 +61,7 @@ const ContactMe: React.FC = () => {
            <input {...register('email')} placeholder="Email" className="contactInput col-span-2" type="email" />
           
             <input {...register('subject')} placeholder="Subject" className="contactInput col-span-2" type="text" />
-            <textarea {...register('message')} placeholder="Message" className="contactInput h-32 col-span-2"></textarea>
+            <textarea {...register('message')} placeholder="Message" className="contactInput h-25 col-span-2"></textarea>
           </div>
           <div className="flex justify-center mt-8"> {/* Center the Submit button */}
             <button
