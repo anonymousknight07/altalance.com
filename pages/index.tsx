@@ -7,9 +7,10 @@ import Header from '../components/Header';
 import Hero from '../components/Hero';
 import TeamMembers from '../components/TeamMembers';
 import ServicesO from '../components/ServicesO';
-import { FaHouseUser } from 'react-icons/fa';
+
 import Skillextra from '../components/Skillextra';
 import dynamic from 'next/dynamic';
+import Footer from '../components/Footer';
 
 const Home: React.FC = () => {
   useEffect(() => {
@@ -54,8 +55,8 @@ const Home: React.FC = () => {
 
       {/* Footer with link to Hero section */}
       <Link href="#hero">
-        <footer className="sticky bottom-5 w-full cursor-pointer flex justify-center">
-          <FaHouseUser size={23} />
+        <footer className=" snap-start bottom-5 w-full cursor-pointer flex justify-center">
+          <Footer/>
         </footer>
       </Link>
     </div>
