@@ -7,11 +7,10 @@ import ContactMe from "../components/ContactMe";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import TeamMembers from "../components/TeamMembers";
-import Skills from "../components/Skills";
-
 import ServicesO from "../components/ServicesO";
 import { FaHouseUser } from "react-icons/fa";
 import Skillextra from "../components/Skillextra";
+import Footer from "../components/Footer";
 
 
 const Home=( )=>{ 
@@ -55,18 +54,22 @@ const Home=( )=>{
        <section id='contact' className="snap-start">
         <ContactMe />
       </section>
+      
+    
 
       <Link href="#hero">
       <footer className="sticky bottom-5 w-full cursor-pointer flex justify-center">
       <FaHouseUser size={23}/>
+      
   
 </footer>
 
       
       </Link> 
-
-
+ 
+    
     </div>
+    
   )
 };
 

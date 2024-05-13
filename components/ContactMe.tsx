@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import { MapPinIcon, EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/solid";
 import { useForm, SubmitHandler } from "react-hook-form";
@@ -31,7 +32,7 @@ const ContactMe: React.FC = () => {
     <div className="min-h-screen flex justify-center items-center bg-gray">
       <div className="container mx-auto px-4 py-8 md:py-16">
         <div className="text-center">
-          <h3 className="text-gray-500 text-2xl md:text-3xl mb-4 uppercase tracking-wide">Contact</h3>
+          <h3 className="top-5 left-9 right-0 uppercase tracking-[20px] text-gray-500 text-2xl text-center">Contact</h3>
           <h4 className="text-4xl font-semibold mb-8">
             <span className="text-[#03abfff7] underline">Let's Connect,</span> and work together.
           </h4>
@@ -54,16 +55,14 @@ const ContactMe: React.FC = () => {
             <p className="text-lg md:text-xl">Hyderabad, Telangana</p>
           </div>
         </div>
-        <form onSubmit={handleSubmit(onSubmit)} className="mt-12 md:mt-16 max-w-lg mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-           
-           <input {...register('name')} placeholder="Name" className="contactInput col-span-2" type="text" />
-           <input {...register('email')} placeholder="Email" className="contactInput col-span-2" type="email" />
-          
+        <form onSubmit={handleSubmit(onSubmit)} className="mt-12 md:mt-11 max-w-lg mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+            <input {...register('name')} placeholder="Name" className="contactInput col-span-2" type="text" />
+            <input {...register('email')} placeholder="Email" className="contactInput col-span-2" type="email" />
             <input {...register('subject')} placeholder="Subject" className="contactInput col-span-2" type="text" />
             <textarea {...register('message')} placeholder="Message" className="contactInput h-25 col-span-2"></textarea>
           </div>
-          <div className="flex justify-center mt-8"> {/* Center the Submit button */}
+          <div className="flex justify-center mt-8">
             <button
               type="submit"
               className="bg-[#03abfff7] py-4 px-8 rounded-md text-black font-bold text-lg"

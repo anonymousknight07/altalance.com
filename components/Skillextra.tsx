@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { skills } from '../constants/skills';
 import { SkillCategory } from '../constants/skillCategories';
 import { HoverBorderGradient } from './ui/hover-border-gradient';
+import dynamic from 'next/dynamic';
 
 const Skillextra: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<SkillCategory>(SkillCategory.Frontend);
@@ -81,4 +82,4 @@ const Skillextra: React.FC = () => {
   );
 };
 
-export default Skillextra;
+export default dynamic(() => Promise.resolve(Skillextra), { ssr: false });
