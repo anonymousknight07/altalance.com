@@ -32,10 +32,10 @@ const ContactMe: React.FC = () => {
     <div className="min-h-screen flex justify-center items-center bg-gray">
       <div className="container mx-auto px-4 py-8 md:py-16">
         <div className="text-center">
-          <h3 className="top-5 left-9 right-0 uppercase tracking-[20px] text-gray-500 text-2xl text-center">Contact</h3>
-          <h4 className="text-4xl font-semibold mb-8">
+          <h1 className="top-5 left-9 right-0 uppercase tracking-[20px] text-gray-500 text-2xl text-center pt-3 ">Contact</h1>
+          <h2 className="text-4xl font-semibold mb-8 pt-5">
             <span className="text-[#03abfff7] underline">Let's Connect,</span> and work together.
-          </h4>
+          </h2>
           <div className="md:flex md:justify-center md:space-x-8">
             <div className="flex flex-col items-center space-y-2 mb-6 md:mb-0">
               <EnvelopeIcon className="text-[#03abfff7] h-7 w-7 animate-pulse" />

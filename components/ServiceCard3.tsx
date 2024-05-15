@@ -19,7 +19,7 @@ const ServiceCard = ({}: Props) => {
           src="https://cdn.sanity.io/images/rh8hx4sn/production/4ffee22b87f49d139af4b3a07cef2016e68ede8d-602x468.jpg"
           alt=""
         />
-        <h4 className="text-4xl font-bold mt-4 text-center">3. App development</h4> {/* Center aligned title */}
+        <h2 className="text-4xl font-bold mt-4 text-center">3. App development</h2> {/* Center aligned title */}
       </div>
       {/* Conditionally render the description based on screen size */}
       <div className="px-0 md:px-10">

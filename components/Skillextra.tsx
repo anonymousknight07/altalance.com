@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { skills } from '../constants/skills';
@@ -22,12 +23,12 @@ const Skillextra: React.FC = () => {
 
   return (
     <section className='h-screen relative flex flex-col items-center justify-center bg-gray'>
-      <h2 className='absolute top-10 left-9 right-0 uppercase tracking-[20px] text-gray-500 text-2xl text-center'>
+      <h1 className='absolute top-10 left-9 right-0 uppercase tracking-[20px] text-gray-500 text-2xl text-center'>
         Skills
-      </h2>
-      <h3 className="absolute top-24 uppercase text-center tracking-[3px] text-gray-500 text-sm">
+      </h1>
+      <h2 className="absolute top-24 uppercase text-center tracking-[3px] text-gray-500 text-sm">
       Our team excels in the following skill sets
-      </h3>
+      </h2>
 
       {/* Category Selector */}
       <div className='flex flex-wrap justify-center gap-3'>
