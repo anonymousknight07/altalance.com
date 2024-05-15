@@ -23,12 +23,12 @@ const Header = () => {
         className="flex flex-row items-center space-x-3"> {/* Used space-x-4 for spacing between icons */}
         
         {/* LinkedIn icon */}
-        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" className="p-1 rounded-full hover:bg-gray-200">
+        <a href="https://www.linkedin.com/in/altalance/" target="_blank" rel="noopener noreferrer" className="p-1 rounded-full hover:bg-gray-200">
           <FaLinkedinIn size={20} color="gray" />
         </a>
 
         {/* GitHub icon */}
-        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" className="p-1 rounded-full hover:bg-gray-200">
+        <a href="https://github.com/Altalance" target="_blank" rel="noopener noreferrer" className="p-1 rounded-full hover:bg-gray-200">
           <FaGithub size={20} color="gray" />
         </a>
 
