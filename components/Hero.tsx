@@ -23,9 +23,9 @@ const Hero = () => {
         />
       </div>
       <div className="z-20">
-        <h1 className="text-xs lg:text-sm uppercase text-gray-500 pb-2 lg:tracking-[10px]">
+        <h2 className="text-xs lg:text-sm uppercase text-gray-500 pb-2 lg:tracking-[10px]">
           Altalance: Freelance Aggregator
-        </h1>
+        </h2>
         <h1 className="text-3xl lg:text-5xl font-semibold px-6 lg:px-10">
           <span className="mr-3">{text}</span>
           <Cursor cursorColor="#03abfff7" />

@@ -1,6 +1,6 @@
 // pages/index.tsx
 
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import About from '../components/About';
@@ -13,23 +13,21 @@ import Skillextra from '../components/Skillextra';
 import Footer from '../components/Footer';
 
 const Home: React.FC = () => {
-  const heroRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    // Scroll to the hero section when the component mounts
-    if (heroRef.current) {
-      heroRef.current.scrollIntoView({ behavior: 'smooth' });
-    }
-  }, []);
-
   const seoTitle = "Altalance - Freelancer Software Development, App Development, Web Development, Product Designing, Marketing";
   const seoDescription = "Altalance provides exceptional freelancer services in software development, app development, web development, product designing, and marketing to elevate your business.";
   const seoKeywords = "freelancer, software development, app development, web development, product designing, marketing, digital services";
   const seoUrl = "https://www.altalance.com";
-  const seoImage = "https://cdn.sanity.io/images/rh8hx4sn/production/cd1b3ecd79cef58af7832b6a3d34491c3bf3f54b-512x487.png";
-
+  const seoImage = "/images/logo5.png"; 
+  useEffect(() => {
+    // Scroll to the Hero section on initial load
+    const heroSection = document.getElementById('hero');
+    if (heroSection) {
+      heroSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, []) // Updated path to the image in the public folder
+ 
   return (
-    <div className="bg-[rgb(36,36,36)] text-white overflow-hidden">
+    <div className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#03abfff7]/80">
       <Head>
         <title>{seoTitle}</title>
         <meta name="description" content={seoDescription} />
@@ -46,38 +44,35 @@ const Home: React.FC = () => {
 
       <Header />
 
-      <main>
-        <section id="hero" ref={heroRef}>
-          <Hero />
-        </section>
+      <section id="hero" className="snap-start">
+        <Hero />
+      </section>
 
-        <section id="about">
-          <About />
-        </section>
+      <section id="about" className="snap-center">
+        <About />
+      </section>
 
-        <section id="services">
-          <ServicesO />
-        </section>
+      <section id="services" className="snap-center">
+        <ServicesO />
+      </section>
 
-        <section id="skills">
-          <Skillextra />
-        </section>
+      <section id="skills" className="snap-start">
+        <Skillextra />
+      </section>
 
-        <section id="team">
-          <TeamMembers />
-        </section>
+      <section id="team" className="snap-start">
+        <TeamMembers />
+      </section>
 
-        <section id="contact">
-          <ContactMe />
-        </section>
-      </main>
+      <section id="contact" className="snap-start">
+        <ContactMe />
+      </section>
 
-      <footer>
-        <Link href="#hero">
-          <span className="cursor-pointer block text-center py-4 bg-gray-800 text-white">Back to Top</span>
-        </Link>
-        <Footer />
-      </footer>
+      <Link href="#hero">
+        <footer className="snap-start bottom-5 w-full cursor-pointer flex justify-center">
+          <Footer />
+        </footer>
+      </Link>
     </div>
   );
 };
