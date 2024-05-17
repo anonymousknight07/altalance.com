@@ -13,11 +13,11 @@ import Skillextra from '../components/Skillextra';
 import Footer from '../components/Footer';
 
 const Home: React.FC = () => {
-  const seoTitle = "Altalance - Freelancer Software Development, App Development, Web Development, Product Designing, Marketing";
-  const seoDescription = "Altalance provides exceptional freelancer services in software development, app development, web development, product designing, and marketing to elevate your business.";
+  const seoTitle = "Altalance - Freelance Software, App, Web Development, Design, Marketing";
+  const seoDescription = "Altalance offers top-notch freelance services in software, app, and web development, product design, and marketing to boost your business.";
   const seoKeywords = "freelancer, software development, app development, web development, product designing, marketing, digital services";
   const seoUrl = "https://www.altalance.com";
-  const seoImage = "/images/logo5.png"; 
+  const seoImage = "logo5.png"; 
   useEffect(() => {
     // Scroll to the Hero section on initial load
     const heroSection = document.getElementById('hero');

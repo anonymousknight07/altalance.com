@@ -32,8 +32,8 @@ const ContactMe: React.FC = () => {
     <div className="min-h-screen flex justify-center items-center bg-gray">
       <div className="container mx-auto px-4 py-8 md:py-16">
         <div className="text-center">
-          <h1 className="top-5 left-9 right-0 uppercase tracking-[20px] text-gray-500 text-2xl text-center">Contact</h1>
-          <h4 className="text-4xl font-semibold mb-8">
+          <h1 className="top-5 left-9 right-0 uppercase tracking-[20px] text-gray-500 text-2xl text-center pt-4">Contact</h1>
+          <h4 className="text-4xl font-semibold mb-8 pt-2">
             <span className="text-[#03abfff7] underline">Let's Connect,</span> and work together.
           </h4>
           <div className="md:flex md:justify-center md:space-x-8">
