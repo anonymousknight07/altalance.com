@@ -48,7 +48,7 @@ const TeamMembers = () => {
     }
   ];
 
-  const handleScrollClick = (index) => {
+  const handleScrollClick = (index: number) => {
     const nextIndex = (index + 1) % teamMembers.length;
     const nextMemberElement = document.getElementById(`team-member-${nextIndex}`);
     if (nextMemberElement) {
