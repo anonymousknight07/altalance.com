@@ -17,14 +17,14 @@ const Home: React.FC = () => {
   const seoDescription = "Altalance offers top-notch freelance services in software, app, and web development, product design, and marketing to boost your business.";
   const seoKeywords = "freelancer, software development, app development, web development, product designing, marketing, digital services";
   const seoUrl = "https://www.altalance.com";
-  const seoImage = "logo5.png"; 
+  const seoImage = "https://cdn.sanity.io/images/rh8hx4sn/production/cd1b3ecd79cef58af7832b6a3d34491c3bf3f54b-512x487.png"; 
   useEffect(() => {
     // Scroll to the Hero section on initial load
     const heroSection = document.getElementById('hero');
     if (heroSection) {
       heroSection.scrollIntoView({ behavior: 'smooth' });
     }
-  }, []) // Updated path to the image in the public folder
+  }, []) 
  
   return (
     <div className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#03abfff7]/80">

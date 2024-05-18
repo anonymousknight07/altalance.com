@@ -80,7 +80,7 @@ const TeamMembers = () => {
               }}
               transition={{ duration: 1.2 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              viewport={{ once: false }}
               src={member.imageSrc}
               height={250}
               width={250}
