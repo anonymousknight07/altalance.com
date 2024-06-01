@@ -11,6 +11,7 @@ import TeamMembers from '../components/TeamMembers';
 import ServicesO from '../components/ServicesO';
 import Skillextra from '../components/Skillextra';
 import Footer from '../components/Footer';
+import Recruit from './recruit';
 
 const Home: React.FC = () => {
   const seoTitle = "Altalance - Freelance Software, App, Web Development, Design, Marketing";

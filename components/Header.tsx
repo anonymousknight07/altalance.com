@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { FaGithub, FaLinkedinIn, FaEnvelope } from 'react-icons/fa';
+import { FaGithub, FaLinkedinIn, FaEnvelope, FaUserPlus } from 'react-icons/fa';
 
 const Header = () => {
   return (
@@ -34,28 +34,51 @@ const Header = () => {
 
       </motion.div>
 
-      {/* Mail icon */}
-      <Link href="#contact">
-        <motion.div
-          initial={{
-            x: 500,
-            opacity: 0,
-            scale: 0.5,
-          }}
-          animate={{
-            x: 0,
-            opacity: 1,
-            scale: 1,
-          }}
-          transition={{
-            duration: 1.5
-          }}
-          className="flex items-center p-1 rounded-full hover:bg-gray-200 cursor-pointer">
-          <FaEnvelope size={20} color="gray" className="mr-2" /> {/* Added margin to the right of the icon */}
-          <p className="uppercase hidden md:inline-flex text-sm text-gray-400">Get in Touch</p>
-        </motion.div>
-      </Link>
-      
+      <div className="flex items-center space-x-4"> {/* Container for mail and join icons */}
+        {/* Mail icon */}
+        <Link href="#contact">
+          <motion.div
+            initial={{
+              x: 500,
+              opacity: 0,
+              scale: 0.5,
+            }}
+            animate={{
+              x: 0,
+              opacity: 1,
+              scale: 1,
+            }}
+            transition={{
+              duration: 1.5
+            }}
+            className="flex items-center p-1 rounded-full hover:bg-gray-200 cursor-pointer">
+            <FaEnvelope size={20} color="gray" className="mr-2" /> {/* Added margin to the right of the icon */}
+            <p className="uppercase hidden md:inline-flex text-sm text-gray-400">Get in Touch</p>
+          </motion.div>
+        </Link>
+        
+        {/* Join Us icon */}
+        <Link href="/recruit">
+          <motion.div
+            initial={{
+              x: 500,
+              opacity: 0,
+              scale: 0.5,
+            }}
+            animate={{
+              x: 0,
+              opacity: 1,
+              scale: 1,
+            }}
+            transition={{
+              duration: 1.5
+            }}
+            className="flex items-center p-1 rounded-full hover:bg-gray-200 cursor-pointer">
+            <FaUserPlus size={20} color="gray" className="mr-2" /> {/* Added margin to the right of the icon */}
+            <p className="uppercase hidden md:inline-flex text-sm text-gray-400">Join Us</p>
+          </motion.div>
+        </Link>
+      </div>
     </header>
   );
 }
