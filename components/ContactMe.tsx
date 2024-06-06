@@ -16,8 +16,8 @@ const ContactMe: React.FC = () => {
   const onSubmit: SubmitHandler<Inputs> = (formData) => {
     const subject = encodeURIComponent(formData.subject);
     const body = encodeURIComponent(`Hi, my name is ${formData.name}. ${formData.message} (${formData.email})`);
-    const outlookLink = `mailto:contact@altalance.com?subject=${subject}&body=${body}`;
-    const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=contact@altalance.com&su=${subject}&body=${body}`;
+    const outlookLink = `mailto:mail@altalance.com?subject=${subject}&body=${body}`;
+    const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=mail@altalance.com&su=${subject}&body=${body}`;
 
     const isOutlookUser = /@outlook\.|@hotmail\.|@live\./.test(formData.email);
 
@@ -39,7 +39,7 @@ const ContactMe: React.FC = () => {
           <div className="md:flex md:justify-center md:space-x-8">
             <div className="flex flex-col items-center space-y-2 mb-6 md:mb-0">
               <EnvelopeIcon className="text-[#03abfff7] h-7 w-7 animate-pulse" />
-              <p className="text-lg md:text-xl">contact@altalance.com</p>
+              <p className="text-lg md:text-xl">mail@altalance.com</p>
             </div>
             <div className="flex flex-col items-center space-y-2 mb-6 md:mb-0">
               <PhoneIcon className="text-[#03abfff7] h-7 w-7 animate-pulse" />
