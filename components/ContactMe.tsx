@@ -16,7 +16,7 @@ const ContactMe: React.FC = () => {
   const onSubmit: SubmitHandler<Inputs> = (formData) => {
     const subject = encodeURIComponent(formData.subject);
     const body = encodeURIComponent(`Hi, my name is ${formData.name}. ${formData.message} (${formData.email})`);
-    const outlookLink = `mailto:mail@altalance.com?subject=${subject}&body=${body}`;
+    const outlookLink = `mailto: mail@altalance.com?subject=${subject}&body=${body}`;
     const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=mail@altalance.com&su=${subject}&body=${body}`;
 
     const isOutlookUser = /@outlook\.|@hotmail\.|@live\./.test(formData.email);
